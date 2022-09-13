@@ -3,9 +3,9 @@ pipeline {
     stages {
         stage('build') {
             steps {
-                echo "Welcome to Jenkins Class"
-                sh 'echo using shell within Jenkinsfile'
-                echo 'not using shell in the Jenkinsfile'
+                echo 'This message come from Jenkins Groovy Language'
+                sh 'This message come from shell within Jenkinsfile'
+                sh 'echo Integrating Jenkins Pipeline with GitHub Webhook using Jenkinsfile'
             }
         }
     }
